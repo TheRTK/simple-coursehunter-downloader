@@ -27,12 +27,12 @@ eg: `node index.js https://coursehunter.net/course/angular-pro`
 - run `node index.js`
 
 ### FAQ
-#####Q: Can I download paid courses for free?
-No.
+**Q: Can I download paid courses for free?**
+>No.
 
-#####Q: Where are the downloaded files?
-simple-coursehunter-downloader/media/%course_name%/
+**Q: Where are the downloaded files?**
+>simple-coursehunter-downloader/media/%course_name%/
 
-#####Q: Your code is terrible, what's wrong with you?! 
-I wrote this script in 20 minutes for personal use. 
+**Q: Your code is terrible, what's wrong with you?!**
+>I wrote this script in 20 minutes for personal use. 
 If you want to rewrite it - good luck.
