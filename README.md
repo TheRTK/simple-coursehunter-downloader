@@ -20,19 +20,27 @@ eg: `node index.js https://coursehunter.net/course/angular-pro`
 
 **You have to pay a paid subscription.**
 
-- You need to open the page of the selected course
-- Press **Ctrl+U** and copy the source HTML code of the page
-- Create `page.html` file at the root of the project 
-- Paste the source code into `page.html` 
+- You need to open the page of the selected course.
+- Press **Ctrl+U** and copy the source HTML code of the page.
+- Create folder `html` at the root of the project.
+- Create file `*.html` in `html` folder and paste the source code of page.
 - run `node index.js`
+
 
 ### FAQ
 **Q: Can I download paid courses for free?**
 >No.
 
-**Q: Where are the downloaded files?**
->simple-coursehunter-downloader/media/%course_name%/
+**Q: Can I download several courses at a time?**
+> Yes. You can create several html files or specify several arguments.
+>
+>> eg: `node index.js https://coursehunter.net/course/angular-pro https://coursehunter.net/course/nedelya-oop-tretiy-potok`
 
-**Q: Your code is terrible, what's wrong with you?!**
->I wrote this script in 20 minutes for personal use. 
-If you want to rewrite it - good luck.
+**Q: Where are the downloaded files?**
+> Default: .../simple-coursehunter-downloader/media/%course_name%/
+
+**Q: Can I save courses to another folder?**
+>Yes. Need to change `MEDIA_FOLDER` in the [index.js](https://github.com/TheRTK/simple-coursehunter-downloader/blob/master/index.js#L6)
+
+**Q: Can I load  html files from another folder?**
+>Yes. Need to change `HTML_FOLDER` in the [index.js](https://github.com/TheRTK/simple-coursehunter-downloader/blob/master/index.js#L7)
