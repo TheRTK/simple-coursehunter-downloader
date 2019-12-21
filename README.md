@@ -12,9 +12,9 @@ npm install
 ## How use
 
 ### Free course
-run `node index.js %link%`
+Run `node index.js %link%`
 
-eg: `node index.js https://coursehunter.net/course/angular-pro`
+e.g. `node index.js https://coursehunter.net/course/angular-pro`
 
 ### Premium course
 
@@ -24,7 +24,7 @@ eg: `node index.js https://coursehunter.net/course/angular-pro`
 - Press **Ctrl+U** and copy the source HTML code of the page.
 - Create folder `html` at the root of the project.
 - Create file `*.html` in `html` folder and paste the source code of page.
-- run `node index.js`
+- Run `node index.js`
 
 
 ### FAQ
@@ -34,10 +34,10 @@ eg: `node index.js https://coursehunter.net/course/angular-pro`
 **Q: Can I download several courses at a time?**
 > Yes. You can create several html files or specify several arguments.
 >
->> eg: `node index.js https://coursehunter.net/course/angular-pro https://coursehunter.net/course/nedelya-oop-tretiy-potok`
+>> e.g. `node index.js https://coursehunter.net/course/angular-pro https://coursehunter.net/course/nedelya-oop-tretiy-potok`
 
 **Q: Where are the downloaded files?**
-> Default: .../simple-coursehunter-downloader/media/%course_name%/
+> Default location: .../simple-coursehunter-downloader/media/%course_name%/
 
 **Q: Can I save courses to another folder?**
 >Yes. Need to change `MEDIA_FOLDER` in the [index.js](https://github.com/TheRTK/simple-coursehunter-downloader/blob/master/index.js#L6)
