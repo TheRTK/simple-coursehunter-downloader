@@ -15,7 +15,7 @@ class Parser {
         const root = HTMLParser.parse(html);
 
         const pageTitle = root.querySelector('title');
-        const courseName = pageTitle ? pageTitle.rawText.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, ''); : 'unnamed';
+        const courseName = pageTitle ? pageTitle.rawText.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '') : 'unnamed';
         const data = [];
 
         const liVideos = root.querySelector('#lessons-list');
@@ -26,7 +26,7 @@ class Parser {
         let counter = 1;
         for (let li of liVideos.childNodes) {
             if (li.tagName === 'li') {
-                const videoName = li.querySelector('.lessons-name').rawText.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');;
+                const videoName = li.querySelector('.lessons-name').rawText.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
 
                 if (!li.childNodes)
                     continue;
